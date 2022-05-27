@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackShirdi - Personalized For Eucational Evironment</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <div class="navbar">
+     <div class="container">
+         <a class="logo" href="index.html">FEEDBACK<span>SHIRDI</span></a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Menu">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Menu">
+                
+                <ul class="primary-nav">
+                     <li class="current"><a href="#">HOME</a></li>
+                     <li><a href="#">ADMIN</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">CONTACT</a></li>
+                    <li class="go-premium-cta"><a href="#">LOGIN</a></li>
+                </ul>
+            </nav>
+     </div>
+   </div>
+
+   <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">ITS EASY &AMP; EFFORTLESS</p>
+                <h1>A Personalized Feedback App For Students</h1>
+                <p class="tag">BY TEAM SHIRDI BATCH 2021</p>
+                </div>
+           </div>
+            <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+       </div>
+
+   </section>
+   
+   <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>PERSONALIZED</li>
+                <li>EASY TO NAVIGATE</li>
+                <li>SNAPPY USER INTERFACE</li>
+                <li>QUICK FEEDBACKS</li>
+                <li>EFFORTLESS FEEDBACK MANAGEMENT</li>
+                <li>FOR STUDENTS &amp; TEACHERS</li>
+            </ul>
+            <img src="images/features.png" alt="Mockup Illustration">
+        </div>
+   </section>
+
+   <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.png" alt="Profile Picture">
+
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eum in molestiae et.</blockquote>
+                    <cite>- Ashish W</cite>
+                </li>
+                <li>
+                    <img src="images/person.png" alt="Profile Picture">
+
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eum in molestiae et.</blockquote>
+                    <cite>- Ashish W</cite>
+                </li>
+                <li>
+                    <img src="images/person.png" alt="Profile Picture">
+
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eum in molestiae et.</blockquote>
+                    <cite>- Ashish W</cite>
+                </li>
+            </ul>
+        </div>
+   </section>
+
+   <section class="contact-section">
+       <div class="container">
+           <div class="contact-left">
+               <h2>Sign Up</h2>
+
+               <form action="">
+                   <label for="name">Name</label>
+                   <input type="text" name="name" placeholder="Your Name">
+
+                   <label for="email">Email</label>
+                   <input type="email" name="email" placeholder="Your Email">
+
+                   <label for="urn">Urn No.</label>
+                   <input type="text" name="urn" placeholder="Your URN">
+                   
+                   <label for="password">Password</label>
+                   <input type="password" name="password" placeholder="Sixdigit">
+
+                   <input type="submit" class="send-message-cta" value="Sign Up">
+               </form>
+           </div>
+       </div>
+   </section>
+
+   <script>
+       const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+   </script>
+
+</body>
+</html>
