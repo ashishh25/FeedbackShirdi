@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FeedbackShirdi</title>
+   <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">FEEDBACK<span>SHIRDI</span></a>
+               
+               <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Menu">
+   
+               <nav>
+                   <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Menu">
+                   
+                   <ul class="primary-nav">
+                        <li class="current"><a href="index.html">HOME</a></li>
+                        <li><a href="admin.html">ADMIN</a></li>
+                   </ul>
+   
+                   <ul class="secondary-nav">
+                       <li><a href="contact.html">CONTACT</a></li>
+                       <li class="go-premium-cta"><a href="account.html">LOGIN</a></li>
+                   </ul>
+               </nav>
+        </div>
+      </div>
+    
+
+
+
+
+     
+     
+     
+     
+     
+      <section class="contact">
+           <div class="container contact__container">
+            
+            <aside class="contact__aside">
+                <div class="aside__image">
+                    <img src="images/features.png" width="600px">
+                </div>
+              
+                <h2>Contact Us</h2>
+                <p>Please contact us through the given links below, for any Feedbacks, Querys.</elit></p>
+                <ul class="contact__details">
+                    <li>
+                        <i class="uil uil-phone-times"></i>
+                        <h5>7709677319</h5>
+                    </li>
+                    <li>
+                        <i class="uil uil-envelope"></i>
+                        <h5>ashish.waghmare@adypu.edu.in</h5>
+                    </li>
+                    <li>
+                        <i class="uil uil-location-point"></i>
+                        <h5>Pune, Maharashtra</h5>
+                    </li>
+                </ul>
+                  <ul class="contact__socials">
+                      <li><a href="https://www.instagram.com/"><i class="uil uil-instagram"></i></a></li>
+                  </ul>
+            </aside>
+
+
+            <form class="contact__form">
+                <div class="form__name">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+           </div>
+     </section>
+
+
+
+
+
+
+
+
+<script>
+        const mobileBtn = document.getElementById('mobile-cta')
+             nav = document.querySelector('nav')
+             mobileBtnExit = document.getElementById('mobile-exit');
+ 
+             mobileBtn.addEventListener('click', () => {
+                 nav.classList.add('menu-btn');
+             })
+ 
+             mobileBtnExit.addEventListener('click', () => {
+                 nav.classList.remove('menu-btn');
+             })
+    </script>
+   
+</body>
+</html>
