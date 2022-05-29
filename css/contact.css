@@ -3,7 +3,7 @@
   --primary-color: #6c63ff;
 }
 
-/*===========================    for desktop  ==================================*/
+/*===========================   mobile  ==================================*/
      
 .contact__container{
     background:#007AF3 ;
@@ -104,7 +104,7 @@
     
   
   
-/*====================      end   desktop ========================================*/
+/*====================   mobile ========================================*/
     
 
 
@@ -267,7 +267,7 @@ a {
       grid-template-columns: 40% 60%;
       gap: 4rem;
       height: 30rem;
-      margin: 7rem auto;
+      margin: 7rem auto ;
       border-radius: 1rem;
        }
   
@@ -277,11 +277,12 @@ a {
            position: relative;
            bottom: 1.4rem;
            height: 33rem;
+           width: 20rem;
        }
        .aside__image {
            display: block;
            position: relative;
-           right: 9rem;
+           right: 8.7rem;
            bottom: 8em;
   
        }
