@@ -6,7 +6,7 @@
 /*===========================   mobile  ==================================*/
      
 .contact__container{
-    background:#007AF3 ;
+    background: #2e3267 ;
     padding: 3rem;
     grid-template-columns: 40% 60%;
     gap: 3rem;
@@ -16,7 +16,7 @@
      }
 
      .contact__aside {
-     background-color: #006bd6;
+     background-color: #6c63ff;
      position: relative;
          padding: 0;
          border-radius: 1rem;
