@@ -308,6 +308,18 @@ footer {
          }
 
      }
+
+     .footer__container {
+        display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+      }
+      .footer__container > div h4 {
+        margin-bottom: 1.2rem;
+      }
+      .footer__1 p {
+        margin: 2rem;
+      }
     
      
 
@@ -385,7 +397,7 @@ footer {
             display: flex;
         }
     }
-//=============================FOOTER======================
+
     footer {
         color: white;
         background: var(--primary-color);
@@ -454,7 +466,7 @@ footer {
             top: 2em;
         }
     }
-//=========================FOOTER=================================
+
     footer {
         color: white;
         background: var(--primary-color);

@@ -310,6 +310,19 @@ footer ul li a:hover {
     background: var(--primary-color);
     color: white;
   }
+  .footer__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .footer__container > div h4 {
+    margin-bottom: 1.2rem;
+  }
+  .footer__1 p {
+    margin: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
