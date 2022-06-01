@@ -213,6 +213,50 @@ nav li a:hover {
   cursor: pointer;
 }
 
+/*===========================================  FOOTER  ===============================================*/
+footer {
+  color: white;
+  background: var(--primary-color);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__container {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  text-align: center;
+  gap: 2rem;
+}
+
+.footer__1 p {
+  margin: 1rem auto;
+}
+
+.footer__container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.2rem 0;
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
     display: none;
@@ -333,6 +377,42 @@ nav li a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+  footer {
+    color: white;
+    background: var(--primary-color);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+  }
+  .footer__container > div h4 {
+    margin-bottom: 1.2rem;
+  }
+  .footer__1 p {
+    margin: 0 0 2rem;
+  }
+  footer ul li {
+    margin-bottom: 0.7rem;
+  }
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.2rem 0;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1450px) {
@@ -353,6 +433,42 @@ nav li a:hover {
     background: url("../images/dots.svg") no-repeat;
     left: 4.5em;
     top: 2em;
+  }
+  footer {
+    color: white;
+    background: var(--primary-color);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+  }
+  .footer__container > div h4 {
+    margin-bottom: 1.2rem;
+  }
+  .footer__1 p {
+    margin: 0 0 2rem;
+  }
+  footer ul li {
+    margin-bottom: 0.7rem;
+  }
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.2rem 0;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
