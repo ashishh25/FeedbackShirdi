@@ -1,0 +1,89 @@
+:root {
+	--primary-color: #6c63ff;
+  }
+
+body{
+	background-color: #2e3267;
+}
+.form{
+	height: 1210px;
+	border-radius: 5px;
+	width: 680px;
+	margin: auto auto 150px auto;
+	background-color: var(--primary-color);
+}
+.required{
+font-size: 13px;
+color: red;
+}
+
+h1 {
+font-weight: bold;
+color: rgb(99, 99, 99);
+letter-spacing: .3em;
+font-size: 20px;
+}
+
+.title-div{
+	height: 150px;
+	width: 600px;
+	background-color: #FDFEFE;
+	margin: 15px;
+	border-radius: 5px;
+	border-top: 10px solid var(--primary-color);
+	padding: 25px;
+}
+.name-div, .college-div, .gmail-div, .mobile-div{
+	height: 150px;
+	width: 650px;
+	background-color: #FDFEFE;
+	margin: 15px;
+	border-radius: 5px;
+}
+.name{
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-bottom: 25px;
+	font-size: 15px;
+}
+.input-div{
+	padding-top: 25px;
+	padding-left: 25px;
+}
+.input-div input{
+	width: 300px;
+	border: 0;
+	outline: 0;
+	border-bottom: 1.5px solid #DCD7D7;
+	font-size: 15px;
+}
+form .btn{
+    width: 100px;
+	background-color: #f75842;
+	width: max-content;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 540;
+	border: none;
+	position: absolute;
+	margin: 15px;
+	color: white;
+}
+.last-div h2{
+	text-align: center;
+	padding-top: 50px;
+	color: #a2a4a6;
+	font-weight: 200;
+}
+.term{
+	font-size: 12px;
+	padding-left: 65px;
+	padding-top: 5px;
+	position: absolute;
+}
+.never{
+	padding-bottom: 10px;
+	font-size: 13px;
+	font-weight: 400;
+	color: white;
+}
