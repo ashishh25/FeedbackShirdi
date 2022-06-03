@@ -1,16 +1,20 @@
 :root {
 	--primary-color: #6c63ff;
+    --color-light: rgba(132, 139, 200, 0.18);
+	
+    --box-shadow: 0 2rem 3rem var(--color-light);
+	
   }
 
 body{
-	background-color: #2e3267;
+	background-color: #F6F6F9;
 }
 .form{
 	height: 1210px;
 	border-radius: 5px;
 	width: 680px;
 	margin: auto auto 150px auto;
-	background-color: var(--primary-color);
+	background-color: #F6F6F9;
 }
 .required{
 font-size: 13px;
@@ -32,14 +36,28 @@ font-size: 20px;
 	border-radius: 5px;
 	border-top: 10px solid var(--primary-color);
 	padding: 25px;
+	box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
 }
-.name-div, .college-div, .gmail-div, .mobile-div{
+
+.title-div:hover {
+	box-shadow: none;
+}
+
+.form-div {
 	height: 150px;
 	width: 650px;
-	background-color: #FDFEFE;
+	background-color: white;
 	margin: 15px;
 	border-radius: 5px;
+	box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
 }
+
+.form-div:hover {
+	box-shadow: none;
+}
+
 .name{
 	padding-top: 20px;
 	padding-left: 25px;
@@ -57,28 +75,45 @@ font-size: 20px;
 	border-bottom: 1.5px solid #DCD7D7;
 	font-size: 15px;
 }
-form .btn{
-    width: 100px;
-	background-color: #f75842;
+    .form-btn {
+	background: var(--primary-color);
 	width: max-content;
 	border-radius: 5px;
 	font-size: 14px;
-	font-weight: 540;
+	font-weight: bold;
 	border: none;
-	position: absolute;
 	margin: 15px;
 	color: white;
 }
 
-.term{
-	font-size: 12px;
-	padding-left: 65px;
-	padding-top: 5px;
-	position: absolute;
+.form-btn:hover {
+	background: #564fdf;
 }
+
+.form-btn:active {
+    transform: scale(0.98);
+}
+
 .never{
 	padding-bottom: 10px;
+	padding-left: 15px;
 	font-size: 13px;
 	font-weight: 400;
-	color: white;
+	color: black;
+}
+/*--------------------------------------FOR MOBILE------------------------------------------*/
+@media only screen and (max-width: 768px) {
+	.form{
+		border-radius: 5px;
+		width: auto;
+		margin: 0 0 150px 0;
+	}
+
+	.title-div{
+		width: auto;
+	}
+
+	.form-div {
+		width: auto;
+	}
 }
