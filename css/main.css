@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: #007AF3;
+  --primary-color: #6c63ff;
 }
 
 body {
@@ -124,7 +124,7 @@ ul.features-list li:before {
 }
 
 .testimonials-section li {
-  background: #006bd6;
+  background: #564fdf;
   text-align: center;
   padding: 2em 1em;
   width: 80%;
@@ -135,7 +135,7 @@ ul.features-list li:before {
 .testimonials-section li img {
   width: 5em;
   height: 5em;
-  border: 0px solid #006bd6;
+  border: 0px solid #564fdf;
   border-radius: 50%;
   margin-top: -4.5em;
 }
@@ -173,6 +173,15 @@ input[type="submit"] {
   padding: .6em 1em;
   width: unset;
   cursor: pointer;
+}
+
+.send-message-cta:hover {
+  background: #564fdf;
+}
+
+.send-message-cta:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 nav.menu-btn {
