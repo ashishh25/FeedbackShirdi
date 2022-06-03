@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #6c63ff;
+    --color-light: rgba(132, 139, 200, 0.18);
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    
+  }
+
+body {
+    font-size: 0.88rem;
+    background: #f6f6f9;
+}
+
+h1 {
+    font-weight: 800px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+main {
+    margin-top: 1.4rem;
+}
+
+main .insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 0 8.1rem 5rem;
+}
+
+main .insights > div {
+    background: white;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .insights>div:hover {
+    box-shadow: none;
+}
+
+main .insights > div span {
+    background: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+}
+
+main .insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h2 {
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    letter-spacing: .3em;
+    font-size: 1rem ;
+}
+
+main .insights .btn {
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 1em;
+    border-radius: 3em;
+    display: inline-block;
+    width: max-content;
+    cursor: pointer;
+}
+
+main .insights .btn:hover {
+    background: #564fdf;
+}
+
+/*---------------------FOR TAB---------------------*/
+@media only screen and (max-width: 1024px) {
+
+    main .insights {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    }
+
+/*---------------------FOR Mobile---------------------*/
+    @media only screen and (max-width: 768px) {
+        main .insights {
+            display: block;
+            padding: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin-top: 5rem;
+            margin-bottom: 0;
+        }
+
+        }
+        
+
+    
