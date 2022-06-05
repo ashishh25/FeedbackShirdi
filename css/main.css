@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: #6c63ff;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 body {
@@ -144,46 +146,6 @@ h2 {
   font-size: 2em;
 }
 
-label {
-  display: block;
-  font-size: 1.2em;
-  margin-bottom: .5em;
-}
-
-input {
-  width: 100%;
-  padding: .8em;
-  border-radius: .3em;
-  border: 1px solid gray;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 1em;
-  margin-top: -1em;
-}
-
-input[type="submit"] {
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: bold;
-  font-size: 1.3em;
-  border: none;
-  margin-top: 1em;
-  border-radius: 3em;
-  display: inline-block;
-  padding: .6em 1em;
-  width: unset;
-  cursor: pointer;
-}
-
-.send-message-cta:hover {
-  background: #564fdf;
-}
-
-.send-message-cta:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-}
-
 nav.menu-btn {
   display: block;
 }
@@ -220,6 +182,98 @@ nav li a:hover {
   float: right;
   margin: .5em;
   cursor: pointer;
+}
+
+.call-to-action {
+  font-size: 0.88rem;
+  background: #F6F6F9;
+}
+
+.call-to-action h2 {
+  font-weight: 800px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.call-to-action h3 {
+  font-size: 0.87rem;
+}
+
+.call-to-action .insights {
+  display: block;
+  padding: 2rem;
+}
+
+.call-to-action .insights > div {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.call-to-action .insights > div:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.call-to-action .insights > div span {
+  background: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+.call-to-action .insights > div .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.call-to-action .insights .btn {
+  background-color: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin-top: 1em;
+  border-radius: 3em;
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+
+.call-to-action .insights .btn:hover {
+  background: #564fdf;
+}
+
+.call-to-action .insights .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.call-to-action .never {
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
 }
 
 /*===========================================  FOOTER  ===============================================*/
@@ -319,10 +373,21 @@ footer ul li a:hover {
     background: var(--primary-color);
     color: white;
   }
+  .call-to-action .insights {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .call-to-action h2 {
+    padding-top: 1.5rem;
+  }
+  .call-to-action .insights > div span {
+    -webkit-margin-end: 1rem;
+            margin-inline-end: 1rem;
+  }
   .footer__container {
     display: -ms-grid;
     display: grid;
- 
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
@@ -391,13 +456,18 @@ footer ul li a:hover {
   .testimonials-section ul li {
     margin: 0 1em;
   }
-  .contact-section {
-    position: relative;
+  .call-to-action .insights {
+    padding: 0 8.1rem 5rem;
+    margin-bottom: 0;
   }
-  .contact-section .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .call-to-action .insights > div span {
+    -webkit-margin-end: 1rem;
+            margin-inline-end: 1rem;
+  }
+  .call-to-action .never {
+    text-align: left;
+    margin-top: -2.8rem;
+    margin-left: 8.1rem;
   }
   footer {
     color: white;
@@ -413,6 +483,7 @@ footer ul li a:hover {
   .footer__container {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
   }
@@ -469,6 +540,7 @@ footer ul li a:hover {
   .footer__container {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
   }

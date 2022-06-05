@@ -188,6 +188,88 @@ nav{
     cursor: pointer;
 }
 
+.call-to-action {
+    font-size: 0.88rem;
+    background: #F6F6F9;
+}
+
+.call-to-action h2 {
+    font-weight: 800px;
+    font-size: 1.8rem;
+    text-align: center;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.call-to-action h3 {
+    font-size: 0.87rem;
+}
+
+.call-to-action .insights {
+    display: block;
+    padding: 2rem;
+}
+
+.call-to-action .insights > div {
+    background: white;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.call-to-action .insights>div:hover {
+    box-shadow: none;
+}
+
+.call-to-action .insights > div span {
+    background: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    margin-inline-end: 1rem;
+}
+
+.call-to-action .insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.call-to-action .insights .btn {
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 1em;
+    border-radius: 3em;
+    display: inline-block;
+    width: max-content;
+    cursor: pointer;
+}
+
+.call-to-action .insights .btn:hover {
+    background: #564fdf;
+}
+
+.call-to-action .insights .btn:active {
+    transform: scale(0.98);
+}
+
+.call-to-action .never{
+	font-size: 13px;
+	font-weight: 400;
+	color: black;
+    text-align: center;
+}
+
+
+
 /*===========================================  FOOTER  ===============================================*/
 footer {
     color: white;
@@ -284,6 +366,19 @@ footer {
 
      }
 
+    .call-to-action .insights {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .call-to-action h2 {
+    padding-top: 1.5rem;
+    }
+
+    .call-to-action .insights > div span {
+        margin-inline-end: 1rem;
+    }
+
      .footer__container {
         display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -363,6 +458,21 @@ footer {
         li {
             margin: 0 1em;
         }
+    }
+    
+    .call-to-action .insights {
+        padding: 0 8.1rem 5rem;
+        margin-bottom: 0;
+    }
+
+    .call-to-action .insights > div span {
+        margin-inline-end: 1rem;
+    }
+
+    .call-to-action .never {
+        text-align: left;
+        margin-top: -2.8rem;
+        margin-left: 8.1rem;
     }
 
     footer {
