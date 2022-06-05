@@ -74,16 +74,6 @@ font-size: 20px;
 	border-bottom: 1.5px solid #DCD7D7;
 	font-size: 15px;
 }
-    .form-btn {
-	background: var(--primary-color);
-	width: max-content;
-	border-radius: 5px;
-	font-size: 14px;
-	font-weight: bold;
-	border: none;
-	margin: 15px;
-	color: white;
-}
 
 .form-btn:hover {
 	background: #564fdf;
