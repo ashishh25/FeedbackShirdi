@@ -142,42 +142,6 @@ ul.features-list {
 h2 {
     font-size: 2em;
 }
-label {
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: .5em;
-}
-input {
-    width: 100%;
-    padding: .8em;
-    border-radius: .3em;
-    border: 1px solid gray;
-    box-sizing: border-box;
-    margin-bottom: 1em;
-    margin-top: -1em;
-}
-
-    input[type="submit"] {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: bold;
-    font-size: 1.3em;
-    border: none;
-    margin-top: 1em;
-    border-radius: 3em;
-    display: inline-block;
-    padding: .6em 1em;
-    width: unset;
-    cursor: pointer;
-}
-
-.send-message-cta:hover {
-	background: #564fdf;
-}
-
-.send-message-cta:active {
-    transform: scale(0.98);
-}
 
 nav.menu-btn {
 display: block;
@@ -395,14 +359,6 @@ footer {
 
         li {
             margin: 0 1em;
-        }
-    }
-
-    .contact-section {
-        position: relative;
-
-        .container {
-            display: flex;
         }
     }
 
