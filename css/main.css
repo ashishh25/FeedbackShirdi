@@ -322,7 +322,7 @@ footer ul li a:hover {
   .footer__container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+ 
         grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
@@ -413,7 +413,6 @@ footer ul li a:hover {
   .footer__container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
   }
@@ -470,7 +469,6 @@ footer ul li a:hover {
   .footer__container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
   }
