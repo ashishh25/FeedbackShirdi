@@ -195,7 +195,7 @@ margin-bottom: 1rem;
 }
 
 .form__input:focus {
-    border-color: var(--color-primary);
+    border-color: #6c63ff;
     background: #ffffff;
 }
 
