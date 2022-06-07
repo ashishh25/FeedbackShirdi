@@ -101,8 +101,8 @@ body {
 
 
     .container__primary {
-    --color-primary: #f75842;
-    --color-primary-dark: #e74731;
+    --color-primary: #6c63ff;
+    --color-primary-dark: #564fdf;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
     --color-success: #4bb544;
@@ -182,13 +182,17 @@ display: none;
 margin-bottom: 1rem;
 }
 
+::placeholder {
+  padding-left: 0.4rem;
+}
+
 .form__input {
     display: block;
     width: 100%;
     padding: 0.75rem;
     box-sizing: border-box;
-    border-radius: var(--border-radius);
-    border: 1px solid #dddddd;
+    border-radius: 3em;
+    border: 3px solid #dddddd;
     outline: none;
     background: #ffffff;
     transition: background 0.2s, border-color 0.2s;
@@ -198,6 +202,7 @@ margin-bottom: 1rem;
     border-color: #6c63ff;
     background: #ffffff;
 }
+
 
 .form__input--error {
     color: var(--color-error);
@@ -211,13 +216,13 @@ margin-bottom: 1rem;
 }
 
 .form__button {
-    width: 100%;
-    padding: 1rem 2rem;
+    max-width: max-content;
+    padding: 10px 20px;
     font-weight: bold;
     font-size: 1.1rem;
     color: #ffffff;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 3em;
     outline: none;
     cursor: pointer;
     background: var(--color-primary);
