@@ -333,6 +333,9 @@ footer ul li a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }

@@ -8,6 +8,7 @@ body {
     background: white;
     margin: 0;
     font-family: 'Poppins';
+    -webkit-tap-highlight-color: transparent;
   }
   
   .navbar {
@@ -235,6 +236,7 @@ margin-bottom: 1rem;
 
 .form__button:active {
     transform: scale(0.98);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .form__text {

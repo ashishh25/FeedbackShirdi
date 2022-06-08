@@ -10,9 +10,7 @@ body {
     background: #f6f6f9;
     margin: 0;
     font-family: 'Poppins';
-    
     -webkit-tap-highlight-color: transparent;
-    
 }
 
 .navbar {
@@ -330,6 +328,10 @@ footer {
     }
 
 @media only screen and (min-width: 768px) {
+
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
 
     .mobile-menu, .mobile-menu-exit {
         display: none;

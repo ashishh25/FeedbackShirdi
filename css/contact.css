@@ -4,7 +4,10 @@
 }
 
 /*===========================   mobile  ==================================*/
-     
+body a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .contact__container{
     background: #2e3267 ;
     padding: 3rem;
