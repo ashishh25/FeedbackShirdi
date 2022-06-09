@@ -377,14 +377,18 @@ footer ul li a:hover {
   .navbar nav li.current a {
     font-weight: bold;
   }
-  .navbar nav li.go-premium-cta a {
+  .navbar nav .go-premium-cta {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
     font-weight: bold;
     border-radius: 5em;
     margin-top: -.2em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 1rem;
   }
-  .navbar nav li.go-premium-cta a:hover {
+  .navbar nav .go-premium-cta:hover {
     background: var(--primary-color);
     color: white;
   }
