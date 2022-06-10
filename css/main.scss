@@ -338,6 +338,11 @@ footer {
         display: none;
     }
                       
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+     }
 
      .navbar nav {
          display: flex;
@@ -347,17 +352,15 @@ footer {
          height: auto;
          width: 100%;
          padding: 0;
-    
+         
          ul {
              display: flex;
          }
 
          a {
              color: black;
-             font-size: 0.7em;
+             font-size: 1em;
              padding: .1em 1em;
-             margin-top: 0.5em;
-             margin-left: 1.5rem;
          }
 
          ul.primary-nav{
@@ -367,14 +370,13 @@ footer {
          li.current a {
              font-weight: bold;
          }
-
          .go-premium-cta {
              color: var(--primary-color);
              border: 3px solid var(--primary-color);
              font-weight: bold;
-             font-size: 0.7em;
-             border-radius: 5rem;
-             margin-top: 3.2px;
+             border-radius: 5em;
+             margin-top: -.2em;
+             justify-content: space-between;
              margin-left: 1rem;
 
              &:hover {

@@ -339,6 +339,15 @@ footer ul li a:hover {
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
   .navbar nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -359,10 +368,8 @@ footer ul li a:hover {
   }
   .navbar nav a {
     color: black;
-    font-size: 0.7em;
+    font-size: 1em;
     padding: .1em 1em;
-    margin-top: 0.5em;
-    margin-left: 1.5rem;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -374,9 +381,11 @@ footer ul li a:hover {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
     font-weight: bold;
-    font-size: 0.7em;
-    border-radius: 5rem;
-    margin-top: 3.2px;
+    border-radius: 5em;
+    margin-top: -.2em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: 1rem;
   }
   .navbar nav .go-premium-cta:hover {
